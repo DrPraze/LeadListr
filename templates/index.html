@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadlistr</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Leadlistr</h1>
+    <form id="searchForm" method="POST" action="{{ url_for(.search) }}">
+      <input type="text" id="searchInput" placeholder="Search keywords...">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <!-- Your content here -->
+    <br>
+    {{ leads }}
+    
+    <br>
+  </main>
+  <footer>
+    <!-- Footer content here -->
+    Made with 💙 by <a href="https://drpraze.github.io/" style="color: green;">Praise J.J.</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
